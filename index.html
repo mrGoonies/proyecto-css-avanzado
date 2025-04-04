@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CleanTrack</title>
-  <link rel="icon" href="./static/assets/icons/herramientas-de-limpieza-2.png">
+  <link rel="icon" href="./static/assets/icons/bucket.png">
   <link rel="stylesheet" href="./static/css/reset.css">
   <link rel="stylesheet" href="./static/css/style.css">
   <link rel="stylesheet" href="./static/css/media_queries.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -18,29 +21,121 @@
       <h2>CleanTrack</h2>
     </div>
     <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Galeria</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="inicio">
       <h1>Optimiza y Organiza el trabajo de Limpieza en tu Empresa</h1>
       <p>Nuestra plataforma permite gestionar tareas de auxiliares de aseo, asegurando un control eficiente y una
         supervisión en tiempo real.</p>
-      <a href="#">Ver funcionalidades</a>
+      <a href="#servicios ">Ver funcionalidades</a>
     </section>
-    <section class="galery">
-      <h2>Supervisión Visual en Tiempo Real</h2>
-      <p>Cada auxiliar de aseo toma fotografías antes y después de realizar sus tareas. Nuestro sistema organiza y
-        almacena estas evidencias para garantizar la calidad del trabajo.</p>
-      <img class="galery__img" src="" alt="">
+    <section class="services" id="servicios">
+      <h2>¿Cómo funciona nuestro sistema?</h2>
+      <p>Facilitamos la gestión de aseo empresarial con tecnología intuitiva y eficiente</p>
+      <div class="custom__cards">
+
+        <div class="custom__card">
+          <h3>Gestión de tareas</h3>
+          <img src="./static/assets/1.jpg" alt="">
+          <div class="content">
+            <div class="text">Asigna tareas a cada auxiliar según la sección de la empresa.</div>
+          </div>
+        </div>
+
+        <div class="custom__card">
+          <h3> Registro Fotográfico</h3>
+          <img src="./static/assets/2.jpg" alt="">
+          <div class="content">
+            <div class="text">Evidencia visual antes y después de cada tarea.</div>
+          </div>
+        </div>
+
+        <div class="custom__card">
+          <h3> Panel de Supervisión</h3>
+          <img src="./static/assets/3.jpg" alt="">
+          <div class="content">
+            <div class="text">Control en tiempo real del estado de cada tarea.</div>
+          </div>
+        </div>
+
+        <div class="custom__card">
+          <h3>Reportes y Análisis</h3>
+          <img src="./static/assets/4.jpg" alt="">
+          <div class="content">
+            <div class="text">Generación de informes automáticos sobre el rendimiento.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria" id="galeria">
+      <h2>Galeria</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <img src="./static/assets/g1.jpg" class="w-100 shadow-1-strong rounded mb-4" />
+
+          <img src="./static/assets/g2.jpg" class="w-100 shadow-1-strong rounded mb-4"
+            alt="Wintry Mountain Landscape" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="./static/assets/g3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+          <img src="./static/assets/g4.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="./static/assets/g5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+          <img src="./static/assets/g6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+          <img src="./static/assets/g7.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+        </div>
+      </div>
+
+    </section>
+    <section class="contact" id="contacto">
+      <h2>Contáctanos</h2>
+      <form style="width: 26rem;">
+        <!-- Name input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="text" id="form4Example1" class="form-control" />
+          <label class="form-label" for="form4Example1">Nombre</label>
+        </div>
+
+        <!-- Email input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="email" id="form4Example2" class="form-control" />
+          <label class="form-label" for="form4Example2">Correo</label>
+        </div>
+
+        <!-- Message input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+          <label class="form-label" for="form4Example3">Mensaje</label>
+        </div>
+
+        <!-- Submit button -->
+        <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Enviar</button>
+      </form>
     </section>
 
 
   </main>
-  <footer></footer>
+
+  <footer class="bg-body-tertiary text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2025 Copyright:
+      <a class="text-body" href="https://www.github.com/mrGoonies">mrGoonies</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
 </body>
 
 </html>
